@@ -22,7 +22,7 @@ matplotlib.use("Agg")  # 无界面环境，直接渲染到文件
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-OUT_DIR = Path(__file__).resolve().parent / "output"
+OUT_DIR = Path(__file__).resolve().parent.parent / "output"  # 脚本在 src\ 里，output\ 在仓库根
 OUT_DIR.mkdir(exist_ok=True)
 
 # ---------- 画布风格（与 heat_1d.py / wave_1d.py 保持一致） ----------

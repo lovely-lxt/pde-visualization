@@ -50,20 +50,28 @@ $$
 
 ```bash
 pip install -r requirements.txt
-python heat_1d.py    # 一维热传导
-python wave_1d.py    # 一维波动
-python heat_2d.py    # 二维热传导
+python src/heat_1d.py      # 一维热传导
+python src/wave_1d.py      # 一维波动
+python src/heat_2d.py      # 二维热传导
+python src/poisson_1d.py   # 一维 Poisson（有限元学习项目）
 ```
 
-动画输出到 `output/` 目录（GIF 格式）。
+动画输出到 `output/` 目录（GIF/PNG）。
 
 ## 目录结构
 
 ```
 pde-visualization/
-├── heat_1d.py        # 一维热传导方程动画
-├── wave_1d.py        # 一维波动方程动画
-├── heat_2d.py        # 二维热传导方程动画
-├── requirements.txt  # 依赖
-└── output/           # 生成的 GIF 动画
+├── src/                # 代码
+│   ├── heat_1d.py      #   一维热传导方程动画
+│   ├── wave_1d.py      #   一维波动方程动画
+│   ├── heat_2d.py      #   二维热传导方程动画
+│   └── poisson_1d.py   #   一维 Poisson 有限元管线（学习中）
+├── docs/               # 文档
+│   ├── Git备忘录.md    #   Git 操作速查（没有 AI 也能自己上传）
+│   ├── 学习记录.md     #   理论 → 代码的学习全过程
+│   └── Question.md     #   提问与回答
+├── output/             # 生成的 GIF/PNG
+├── requirements.txt    # 依赖
+└── README.md
 ```

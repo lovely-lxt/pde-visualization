@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from pathlib import Path
 
-OUT_DIR = Path(__file__).resolve().parent / "output"
+OUT_DIR = Path(__file__).resolve().parent.parent / "output"  # 脚本在 src\ 里，output\ 在仓库根
 OUT_DIR.mkdir(exist_ok=True)
 
 # ---------- 画布风格（浅色面、弱化坐标轴） ----------
